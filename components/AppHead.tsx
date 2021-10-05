@@ -3,6 +3,8 @@ import NextHead from 'next/head'
 import { useTranslation } from 'next-i18next'
 import { DefaultSeo } from 'next-seo'
 
+const NAME = 'Boilerplate'
+
 const AppHead = () => {
   const { t } = useTranslation()
   return (
@@ -35,24 +37,24 @@ const AppHead = () => {
         <meta name="theme-color" content="#ffffff" />
       </NextHead>
       <DefaultSeo
-        titleTemplate="%s | Jikiki"
+        titleTemplate={`%s | ${NAME}`}
         defaultTitle={t('seo.title')}
         description={t('seo.description')}
         openGraph={{
           type: 'website',
           url: process.env.NEXT_PUBLIC_URL,
-          site_name: 'Jikiki',
+          site_name: NAME,
           images: [
             {
               url: process.env.NEXT_PUBLIC_URL + '/assets/img/og-cover.png',
               width: 300,
               height: 169,
-              alt: 'Jikiki logo',
+              alt: `${NAME} logo`,
             },
           ],
         }}
         twitter={{
-          handle: 'jikiki',
+          handle: NAME.toLowerCase(),
           site: process.env.NEXT_PUBLIC_URL,
           cardType: 'summary_large_image',
         }}

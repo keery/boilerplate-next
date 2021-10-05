@@ -5,6 +5,7 @@ import '../styles/globals.css'
 import theme from '../theme'
 import { client } from '~api/client-react-query'
 import AppHead from '~components/AppHead'
+import Layout from '~components/Layout'
 import { QueryClientProvider } from 'react-query'
 import { appWithTranslation } from 'next-i18next'
 
@@ -14,7 +15,9 @@ const App = ({ Component, pageProps }: AppProps) => {
       <AppHead />
       <QueryClientProvider client={client}>
         <ChakraProvider theme={theme}>
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </ChakraProvider>
       </QueryClientProvider>
     </>

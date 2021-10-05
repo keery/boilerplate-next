@@ -32,49 +32,9 @@ const theme = extendTheme({
     '2xl': '1.6rem',
     '3xl': '2.15rem',
   },
-  colors: {
-    kijiji: {
-      main: '#373373',
-      red: '#f1454f',
-    },
-    inputHover: '#8ea4da',
-    gray: {
-      '50': '#F2F2F2',
-      '100': '#E5E5E5',
-      '200': '#C4C4C4',
-      '300': '#ADADAD',
-      '400': '#969696',
-      '500': '#808080',
-      '600': '#666666',
-      '700': '#4D4D4D',
-      '800': '#333333',
-      '900': '#1A1A1A',
-    },
-    purple: {
-      '50': '#F3EDF8',
-      '100': '#DDCBEB',
-      '200': '#C7AADF',
-      '300': '#B189D2',
-      '400': '#9B68C5',
-      '500': '#8547B8',
-      '600': '#6A3993',
-      '700': '#502A6F',
-      '800': '#351C4A',
-      '900': '#1B0E25',
-    },
-  },
-  radii: {
-    sm: '2px',
-    md: '4px',
-    lg: '20px',
-    xl: '32px',
-    xxl: '40px',
-  },
-  shadows: {
-    sm: '0 2px 4px 0 rgba(0,0,0,0.05)',
-    md: '0 2px 8px 0 rgba(0,0,0,0.1)',
-    lg: '0px 10px 15px #a9a9a9',
-  },
+  colors: {},
+  radii: {},
+  shadows: {},
   components: {
     Button,
     Container,
@@ -84,20 +44,9 @@ const theme = extendTheme({
     Input,
     Textarea,
   },
-  textStyles: {
-    h1: {
-      fontSize: '5xl',
-      fontWeight: '900',
-      lineHeight: 'base',
-    },
-  },
-  breakpoints: {
-    base: '0em',
-    xl: '87.5rem',
-  },
-  gradient: {
-    blueViolet: 'linear-gradient(to right, #373373, #554fa9)',
-  },
+  textStyles: {},
+  breakpoints: {},
+  gradient: {},
   space: {
     full: '-1.5rem',
     px: '1px',
@@ -143,36 +92,7 @@ const theme = extendTheme({
     62: '15.5rem',
     64: '16rem',
   },
-  layerStyles: {
-    full: {
-      pos: 'absolute',
-      left: 0,
-      right: 0,
-      top: 0,
-      bottom: 0,
-    },
-    priceInput: {
-      alignItems: 'center',
-      border: '1px solid',
-      borderColor: 'gray.200',
-      borderRadius: '10px',
-      py: 2,
-      px: 2.5,
-      _hover: {
-        borderColor: 'inputHover',
-      },
-    },
-    filter: {
-      height: '52px',
-      borderRadius: 'xl',
-      border: { base: 'none', lg: '1px solid #E5E5E5' },
-      padding: '5px 25px',
-      cursor: 'pointer',
-      _hover: {
-        borderColor: 'inputHover',
-      },
-    },
-  },
+  layerStyles: {},
 })
 
 export default extendTheme(theme)
